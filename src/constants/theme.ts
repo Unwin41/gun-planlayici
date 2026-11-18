@@ -9,18 +9,30 @@ import { Platform } from 'react-native';
 
 export const Colors = {
   light: {
-    text: '#000000',
+    text: '#11181C',
     background: '#ffffff',
     backgroundElement: '#F0F0F3',
     backgroundSelected: '#E0E1E6',
     textSecondary: '#60646C',
+    primary: '#2563EB',
+    onPrimary: '#ffffff',
+    primarySoft: '#DBEAFE',
+    success: '#16A34A',
+    danger: '#DC2626',
+    border: '#D9DADE',
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
+    text: '#ECEDEE',
+    background: '#0B0B0D',
+    backgroundElement: '#1C1D20',
     backgroundSelected: '#2E3135',
     textSecondary: '#B0B4BA',
+    primary: '#60A5FA',
+    onPrimary: '#0B0B0D',
+    primarySoft: '#1E3A5F',
+    success: '#4ADE80',
+    danger: '#F87171',
+    border: '#34363B',
   },
 } as const;
 
@@ -59,6 +71,13 @@ export const Spacing = {
   four: 24,
   five: 32,
   six: 64,
+} as const;
+
+/** Corner radius scale: small controls, buttons/inputs, surfaces. Nothing else. */
+export const Radius = {
+  sm: 6,
+  md: 10,
+  lg: 14,
 } as const;
 
 export const BottomTabInset = Platform.select({ ios: 50, android: 80 }) ?? 0;
